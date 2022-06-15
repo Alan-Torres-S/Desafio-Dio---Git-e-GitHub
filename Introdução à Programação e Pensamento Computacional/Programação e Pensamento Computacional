@@ -1,0 +1,62 @@
+#Introdução à Programação e Pensamento Computacional
+Instrutora: Juliana Mascarenhas
+
+Principais anotações:
+
+PENSAMENTO COMPUTACIONAL 
+
+Processo de pensamento envolvido na expressão de soluções em passos computacionais ou algoritmos que podem ser implatados no computador.
+
+Pilares: - Decomposição
+	 - Reconhecimento de padrões
+	 - Abstração
+	 - Design de algoritmos
+
+RACIOCÍNIO LÓGICO
+
+Classsificação: - Indução
+		- Dedução
+		- Abdução
+
+Inferência => Sintética => Abdução e Indução
+Inferência => Analítica => Dedução
+
+TÉCNICAS DE LÓGICA DE PROGRAMAÇÃO
+
+- Linear: execução sequenciada; única dimensão; recusos limitados.
+- Estruturada: organização, disposição e ordem dos elementos essenciais que compõem um corpo (concreto ou abastrato).
+- Modular: partes independentes; controlada por um conjunto de regras.
+	Metas: - Simplificação
+	       - Decompor o problema
+	       - Verificação do módulo
+
+VETORES E MATRIZES
+
+- Vetores: "Um vetores é caracterizado por uma variável dimensionada com tamanho pré-fixado".
+- Matriz: "É uma tabela organizada em linhas e colunas no formato "MxN", onde M representa o número de linhas (horizontal) e N o número de colunas (vertical).
+
+FUNÇÕES
+
+As funções, ou sub-rotinas são blocos de instruções que realizam tarefas específicas.
+
+INSTRUÇÕES DE ENTRADA/SAÍDA
+
+Consiste na inserção e recebimento de dados do mundo real por meio de ação de alguma interface, seja teclado, mouse, arquivos, entre outros.
+
+LINGUAGEM DE PROGRAMAÇÃO
+
+Método padronizado composto por um conjunto de regras sintáticas e semânticas de implementação de um código fonte.
+	- Código fonte: Tradução
+			Interpretação
+
+ANÁLISES DE CÓDIGO
+
+- ANÁLISE LÉXICA: Particionar / Classificar / Eliminar
+- ANÁLISE SINTÁTICA(forma): Sintaxe: "Componente do sistema linguístico que interligam os constituintes da sentença, atribuindo-lhe uma estrutura".
+- ANÁLISE Semântica(significado): Semântica: "É o estudo do significado. Incide sobre a relação entre significantes, como: palavras, frases, sinais e simbolos".
+
+
+
+
+
+
