@@ -1,0 +1,78 @@
+#Introdução ao Git e ao GitHub
+Instrutor: Otávio Reis Perkles
+
+COMO O GIT FUNCIONA
+
+- SHA1: É um algoritmo de encriptação. Gera um conjunto de caracteres de 40 posições.
+
+
+OBJETOS INTERNOS DO GIT
+
+- BLOBS: Contém meta dados do Git; carrega SHA1.
+- TREE: Armazena Blobs e/ou outras árvores.
+- COMMIT: Dá significado para todos os arquivos. Leva o nome do autor, data e hora de criação. Também possui SHA1 em seus meta dados.
+
+
+CHAVE SSH E TOKEN - GITHUB
+
+- Chave SSH: Estabelece uma conexão segura e encriptada entre duas máquinas.
+	
+* Criando a chave SSH:
+	No Terminal utilizar o comando: ssh-keygen -t ed25519 -C "seu e-mail" ==> Após este procedimento será gerado duas chaves, deve-se utilizar a chave com extensão .pub (pública) para registro no GitHub. Para visualizar as chaves geradas deve-se utilizar o Terminal com o comando: cd /home/usuario/.ssh ==> na pasta /.ssh deve-se utilizar o comando ls, logo as chaves serão exibidas ==> Utilizar o comando: cat id_ed25519.pub, será exibido o código gerado que deve ser copiado para o GitHub conforme procedimento abaixo.
+
+* Adcionando a chave no GitHub:
+	Após estar logado no GitHub, deve-se realizar os seguintes procedimentos: Clicar na opção DEFINÇÕES ==> CHAVES SSH E GPG ==> Chaves SSH NOVA CHAVE SSH.
+
+* Estabelecendo a conexão entre a máquina e o GitHub atravẽs da chave SSH:
+	No Terminal utilizar o comando: eval $(ssh-agent -s) ==> ssh-add id_ed25519 
+
+- Criando o Token de Acesso Pessoal:
+	No GitHub na área logada deve-se acessar CONFIGURAÇÕES DO DESENVOLVEDOR ==> TOKENS DE ACESSO PESSOAL ==> GERAR NOVO TOKEN.
+
+
+INSTALAÇÃO GIT NO UBUNTU (Procedimentos disponibilizados através do Fórum pela Camila Cavalcante)
+
+1. Abra o terminal (Ctrl + Alt + t) e vamos verificar se temos o git instalado:
+git --version
+
+2. Execute o comando:
+sudo apt-get install git-all
+
+3. Confirme novamente se o git realmente está instalado:
+git --version
+
+4. Vamos começar as configurações iniciais:
+
+4.1 Cofigurar o nome de usuário
+git config --global user.name "Seu nome"
+​
+4.2 Configurar o endereço de e-mail:​ É de suma importância que o ENDEREÇO DE E-MAIL SEJA O MESMO DO GITHUB afim de evitar conflitos!
+git config --global user.email seuemail@email.br
+​
+4.3 Vamos conferir a lista de configurações:
+git config --list
+
+5. Pronto, git instalado e configurado com sucesso!
+
+
+INICIANDO O GIT E CRIANDO UM COMMIT
+
+No Terminal, na pasta desejada deve-se inserir o comando: git init.
+	
+	- Adcionando um arquivo no Git: No Terminal utilizar o comando: git add . (adciona todos os arquivos) ==> git commit -m "inserir mensagem sobre o que está sendo realizado".
+
+
+TRANSFERINDO UM REPOSITÕRIO LOCAL PARA O GITHUB
+
+1. Na área logada do GitHub, acessar: PERFIL ==> SEUS REPOSITÓRIOS ==> Clicar Novo ==> Preencher o nome do repositório e clicar em criar repositório.
+
+2. Enviar o repositório local para o GitHub: No Terminal ==> git remote add origin "acrescentar o link do repositório criado no GitHub" ==> Verificar através do comando: git status para verificar se todos os arquivos estão prontos ==> utilizar o comando: git commit -m "inserir mensagem sobre o que estã sendo realizado" ==> Utilizar o comando: git push origin master para o envio do repositório.
+
+
+TRANSFERINDO UM REPOSITÕRIO DO GITHUB PARA A MÁQUINA
+
+1. Na área logada do GitHub, acessar: PERFIL ==> SEUS REPOSITÓRIOS ==> Abrir o repositório desejado ==> Copiar o endereço (HTTPS) disponibilizado no campo CÓDIGO.
+
+2. No Terminal utilizar o comando: git clone acrescido do endereço do repositório remoto (copiado no procedimento anterior).
+
+
